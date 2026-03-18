@@ -1,0 +1,17 @@
+* {
+	background-color: #141415;
+	text-decoration-color: whitesmoke;
+	/*background-repeat: repeat-x repeat-y;*/
+}
+
+pre {
+	padding-top: 90px;
+	color:whitesmoke;
+	text-align: center;
+}
+
+p {
+	color: navajowhite;
+	text-align: center;
+	font-family: monospace;
+}
