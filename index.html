@@ -3,9 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>0xFFC00</title>
-</head>
-<body>
+	<link rel="stylesheet" href="style.css">
+	<title>psiini</title>
 
-</body>
+</head>
+<pre id="art">
+                _ _       _ 
+    ____  _____(_|_)___  (_)
+   / __ \/ ___/ / / __ \/ / 
+  / /_/ (__  ) / / / / / /  
+ / .___/____/_/_/_/ /_/_/   
+/_/                         
+</pre>
+<script>
+function getRandomColor() {
+  return "#" + Math.floor(Math.random()*16777215).toString(16);
+}
+
+function applyAutoRefresh() {
+	window.location.reload();
+}
+
+const art = document.getElementById("art");
+let result = "";
+
+for (let char of art.textContent) {
+  if (char === "\n") {
+    result += "<br>";
+  } else {
+    result += `<span style="color:${getRandomColor()}">${char}</span>`;
+  }
+}
+art.innerHTML = result;
+</script>
+</pre>
+<postpre>
+	<p>More soon!</p>
+</postpre>
 </html>
